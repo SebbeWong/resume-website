@@ -1,0 +1,283 @@
+/*----- Box sizing -----*/
+*{
+    box-sizing: border-box;
+}
+/*----- Font (roboto) -----*/
+@font-face{
+    font-family: roboto;
+    src: url(fonts-roboto/Roboto-Regular.ttf);
+}
+/*----- Font (josefin) -----*/
+@font-face{
+    font-family: josefin;
+    src: url(font-josefin/JosefinSans-VariableFont_wght.ttf);
+}
+
+/*----- Header -----*/
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+header h1{
+    display: flex;
+    position: absolute;
+    z-index: 2000;
+    right: 46vw;
+    top: 6vw;
+    font-size: 5vw;
+    font-family: roboto;
+}
+
+header p{
+    display: flex;
+    position: absolute;
+    z-index: 2000;
+    left: 58vw;
+    top: 15vw;
+    font-size: 3vw;
+    font-family: roboto;
+}
+
+.blue-box{
+    
+    position: relative;
+    background-color: steelblue;
+    height: 20vw;
+    width: 80vw;
+    z-index: 1000;
+    left: 5vw;
+    top: 3vw;
+}
+
+.grey-box{
+    
+    position: absolute;
+    background-color: rgb(173, 176, 179);
+    height: 20vw;
+    width: 80vw;
+}
+
+.nav-bar{
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar li{
+    display: inline-block;
+    font-family: josefin;
+   color: black;
+}
+.nav-bar li:hover{
+    color: rgb(162, 166, 170);
+    font-size: 2.2vw;
+    transition: 0.5s ease-in;
+}
+.home{
+    position: absolute;
+    right: 80vw;
+    top: 22vw;
+    font-size: 2vw;
+}
+.contact{
+    position: absolute;
+    right: 71vw;
+    top: 22vw;
+    font-size: 2vw;
+}
+
+/*----- Main Content -----*/
+
+.main-content{
+    margin-top: 10vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.work-life{
+    height: auto;
+    width: 55%;
+    display: flex;
+    flex-flow: column;
+}
+
+
+.work-experiens{
+    text-align: center;
+    font-size: 4vw;
+    font-family: roboto;
+    border-bottom: 2px solid steelblue;
+}
+
+.work{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+    font-family: roboto;
+}
+
+.slim-text{
+    font-weight: 300;
+    font-style: italic;
+    font-family: roboto;
+}
+
+.year{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    font-family: roboto;
+}
+
+.info{
+    font-size: 2vw;
+    text-align: center;
+    line-height: 3vw;
+    font-family: josefin;
+}
+
+.border-side{
+    border-right: 2px solid steelblue;
+}
+
+.skill-life{
+    height: auto;
+    width: 35%;
+    display: flex;
+    flex-flow: column;
+}
+
+.skill{
+    text-align: center;
+    font-size: 4vw;
+    font-family: roboto;
+    border-bottom: 2px solid steelblue;
+    position: relative;
+    top: -6px;
+}
+
+
+.skill-name{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+    font-family: roboto;
+}
+
+.skill-info{
+    font-size: 2vw;
+    text-align: center;
+    line-height: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: josefin;
+}
+
+.språk-grad{
+    font-weight: 300;
+    font-style: italic;
+    font-family: josefin;
+}
+.border-bottom{
+    border-bottom: 2px solid steelblue;
+}
+
+/*----- Education -----*/
+
+.last-part{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.education{
+    text-align: center;
+    font-size: 4vw;
+    font-family: roboto;
+    margin-bottom: 0;
+    text-decoration: 2px solid steelblue underline;
+}
+
+.education-school-name{
+    text-align: center;
+    font-size: 3vw;
+    font-family: roboto;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.education-school-year{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    font-family: roboto;
+}
+
+.education-school-course{
+    font-size: 2vw;
+    text-align: center;
+    line-height: 3vw;
+    font-family: josefin;
+}
+
+.education-courses{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+    
+}
+
+.courses{
+    text-align: center;
+    font-size: 4vw;
+    font-family: roboto;
+    margin-bottom: 0;
+    margin-top: 1vw;
+    text-decoration: 2px solid steelblue underline;
+}
+
+.course-name{
+    text-align: center;
+    font-size: 3vw;
+    font-family: roboto;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+.place-year{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 0;
+    font-family: roboto;
+}
+
+.curriculum{
+    font-size: 2vw;
+    text-align: center;
+    line-height: 3vw;
+    font-family: josefin;
+    margin-top: 0;
+}
+
+.back-to-top{
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 1vw;
+    text-decoration: none;
+    font-family: josefin;
+}
+
+.back-to-top:hover{
+    color: rgb(179, 180, 182);
+}

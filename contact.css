@@ -1,0 +1,177 @@
+/*----- Box sizing -----*/
+*{
+    box-sizing: border-box;
+}
+/*----- Font (roboto) -----*/
+@font-face{
+    font-family: roboto;
+    src: url(fonts-roboto/Roboto-Regular.ttf);
+}
+/*----- Font (josefin) -----*/
+@font-face{
+    font-family: josefin;
+    src: url(font-josefin/JosefinSans-VariableFont_wght.ttf);
+}
+/*----- Background -----*/
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: steelblue;      
+}
+
+
+/*----- Header -----*/
+
+header{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}   
+/*----- Header (logo/name) -----*/
+.top-text{
+    text-align: center;
+    margin-bottom: 1vw;
+    font-size: 4vw;
+    font-family: roboto;
+    color: white;
+}
+.first-name{
+    text-align: center;
+    margin-top: 0;
+    font-size: 6vw;
+    font-family: roboto;
+    color: white;
+}
+.last-name{
+    background-color: whitesmoke;
+    color: steelblue;
+    padding: 0 2px;
+}
+/*----- Header (menu) -----*/
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: josefin;
+    font-size: 2vw;
+}
+
+.home, .experience{
+    color: white;
+    text-decoration: none;
+}
+.home:hover, .experience:hover{
+    color: rgb(169, 161, 161);
+    transition: 0.2s ease-in;
+}
+/*----- Main content -----*/
+main{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: space-around;
+    top: 30vw;
+}
+
+main div{
+    display: grid;
+    height: 20vw;
+    width: 28vw;
+    border: 1px solid black;
+    background-color: white;
+    ;
+}
+
+.fa-solid{
+    font-size: 4vw;
+    padding-top: 1vw;
+    justify-self: center;
+}
+main p{
+    font-size: 2vw;
+    text-align: center;
+    font-family: josefin;
+}
+.link-text{
+    text-decoration: none;
+    color: black;
+}
+
+main p:hover{
+    color: rgb(170, 163, 163);
+}
+/*----- Footer content -----*/
+
+.last-part{
+    top: 40vw;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.link-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    
+}
+.text-section{
+    width: 35%;
+    
+}
+.fa-brands{
+    font-size: 8vw;
+    color: black;
+}
+
+.fa-brands:hover{
+    color: steelblue;
+    transition: 0.2s ease-in-out;
+}
+
+.text-section{
+    padding-right: 1vw;
+    font-size: 4vw;
+    text-align: center;
+
+}
+#for{
+    font-weight: lighter;
+    font-style: italic;
+}
+#opportunity{
+    font-weight: bolder;
+    font-size: larger;
+}
+#a{
+    font-weight: lighter;
+    font-style: italic;
+}
+#change{
+    font-weight: bolder;
+    font-size: larger;
+}
+#digital{
+    background-color: rgb(133, 187, 231);
+    font-weight: bolder;
+    font-size: larger;
+}
+.last-words{
+    top: 38vw;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: steelblue;
+    color: white;
+    font-size: 3vw;
+    font-family: roboto;
+}
+

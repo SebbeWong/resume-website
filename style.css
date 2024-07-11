@@ -1,0 +1,249 @@
+
+/*----- Box sizing -----*/
+*{
+    box-sizing: border-box;
+}
+/*----- Font (roboto) -----*/
+@font-face{
+    font-family: roboto;
+    src: url(fonts-roboto/Roboto-Regular.ttf);
+}
+/*----- Font (josefin) -----*/
+@font-face{
+    font-family: josefin;
+    src: url(font-josefin/JosefinSans-VariableFont_wght.ttf);
+}
+/*----- Header -----*/
+.headBox{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: 15vw;
+    margin-top: 50px;
+    background: linear-gradient(to bottom,
+    #2774AE, #E5E4E2);
+    justify-content: center;
+}
+
+.resume{
+    padding-top: 5px;
+    font-size: 3vw;
+    text-align: center;
+    font-family: roboto;
+    margin: 0;
+}
+
+
+h1{
+    font-size: 5vw;
+    font-family:roboto;
+    align-self: center;
+    margin: 0;
+}
+
+.thanks{
+    padding-bottom: 5px;
+    font-size: 3vw;
+    text-align: center;
+    font-family: roboto;
+    margin: 0;
+}
+/*----- Nav bar -----*/
+.navBar{
+    position: absolute;
+    z-index: 99999;
+
+}
+
+.navBar > div{
+    margin-top: 5px;
+    height: 10px;
+    aspect-ratio: 5/1;
+    border-radius: 20% /90%;
+    background-color: steelblue;
+    transition: 0.75s linear;
+    font-size: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.navBar:hover > div{
+    margin-top: 0px;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(200, 199, 199);
+    height: 30px;
+    font-size: 12px;
+    
+}
+
+.navBar div:hover{
+    background-color:#265c86;
+    
+}
+
+.navBar a{
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+   
+}
+.navBar a:hover{
+    font-weight: bold;
+    
+}
+
+
+/*----- Main content -----*/
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.selfie{
+    height: 40vw;
+    width: 40vw;
+    background-image: url(img-resume/image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 80px;
+}
+
+.coverLetter h2{
+    text-align: center;
+    font-family: roboto;
+    font-size: 3vw;
+}
+#glädjen{
+    color: steelblue;
+}
+.coverLetter p{
+    max-width: 40vw;
+    text-align: center;
+    font-family: roboto;
+    font-size: 1.6vw;
+    line-height: 2.3vw;
+}
+
+.border{
+    border-bottom: 2px solid;
+    color: steelblue;
+}
+/*----- Socialmedia icons -----*/
+
+.social-icon{
+    display: flex;
+    position: relative;
+}
+
+.fa-brands{
+    position: absolute;
+
+}
+
+.fa-instagram{
+    color: rgb(43, 43, 108);
+    position: absolute;
+    z-index: 88888;
+    top: -8vw;
+    right: 2vw;
+    font-size: 3vw;
+}
+
+.fa-linkedin{
+    color: rgb(43, 43, 108);
+    position: absolute;
+    z-index: 88888;
+    top: -8vw;
+    left: -0.9vw;
+    font-size: 3vw;
+}
+
+
+.fa-instagram:hover{
+    color: rgb(85, 85, 140);
+    font-size: 3.3vw;
+    transition: 0.2s ease-in;
+}
+
+.fa-linkedin:hover{
+    color: rgb(85, 85, 140);
+    font-size: 3.3vw;
+    transition: 0.2s ease-in;
+}
+
+/*----- Last words -----*/
+
+.last-words{
+    display: flex;
+    width: 35vw;
+    font-size: 3vw;
+    top: -14vw;
+    position: relative;
+    text-align: center;
+    font-family: josefin;
+    line-height: 4vw;
+}
+
+#tack{
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: solid black underline;
+}
+#besökte{
+    font-weight: 300;
+    font-style: italic;
+}
+#resume{
+    background-color: rgb(75, 140, 194);
+    padding: 2px 2px;
+}
+#hoppas{
+    font-weight: 300;
+    font-style: italic;
+}
+#väckt{
+    text-decoration: solid black underline;
+}
+#intresse{
+    font-weight: 600;
+    font-size: larger;
+}
+#fram{
+    font-weight: 300;
+    font-style: italic;
+}
+#er{
+    font-weight: 600;
+    font-size: larger;
+}
+#tack-igen{
+    background-color: rgb(75, 140, 194);
+    padding: 2px 2px;
+}
+
+
+/*----- Bottom picture -----*/
+
+.bottom-pic{
+    display: flex;
+    height: 1vw;
+
+}
+
+.bottom-img{
+    height: 25vw;
+    width: 41vw;
+    position: relative;
+    left: 47.5vw;
+    bottom: 29vw;
+    margin-bottom: 0;
+
+}
